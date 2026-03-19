@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://cerbras.com/wp-content/uploads/2021/01/LUMINATTO-BEIGE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 48px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 36px;
+}
+
+p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: hsl(0, 0%, 25%);
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: antiquewhite;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 0%, 15%);
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  display: inline-block;
+  max-width: 300px;
+}
+
+main ul {
+  margin-top: 20px;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+  border-radius: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity 250ms ease;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+header {
+  background-color: hsl(0, 0%, 86%);
+  text-align: center;
+  padding: 25px;
+}
